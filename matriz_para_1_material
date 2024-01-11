@@ -1,0 +1,20 @@
+class FibraCarbono:
+    def __init__(self, densidad, resistencia_tension, modulo_elasticidad, conductividad_termica):
+        self.densidad = densidad  # kg/m^3
+        self.resistencia_tension = resistencia_tension  # MPa
+        self.modulo_elasticidad = modulo_elasticidad  # GPa
+        self.conductividad_termica = conductividad_termica  # W/(m*K)
+
+# Crear una instancia de la matriz de fibra de carbono
+fibra_carbono = FibraCarbono(
+    densidad=1800,
+    resistencia_tension=3500,
+    modulo_elasticidad=230,
+    conductividad_termica=15
+)
+
+# Acceder a las propiedades de la matriz
+print("Densidad:", fibra_carbono.densidad, "kg/m^3")
+print("Resistencia a la tensión:", fibra_carbono.resistencia_tension, "MPa")
+print("Módulo de elasticidad:", fibra_carbono.modulo_elasticidad, "GPa")
+print("Conductividad térmica:", fibra_carbono.conductividad_termica, "W/(m*K)")
